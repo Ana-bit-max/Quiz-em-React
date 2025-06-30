@@ -27,6 +27,7 @@ const Question = () => {
             key={index}
             answer={currentQuestion.answer}
             selectOption={() => onSelectOption(option)}
+            hide={quizState.optionHide === option ? "hide": null }
           />
         ))}
       </div>
